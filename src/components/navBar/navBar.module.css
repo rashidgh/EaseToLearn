@@ -1,0 +1,59 @@
+.navBarBlock {
+    height: 80px;
+    width: 100vw;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.navBarBlock>div {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarBlock>div>div {
+    display: flex;
+    align-items: center;
+}
+
+.navBarBlock>div>div>div {
+    height: 3px;
+    width: 159px;
+    background-color: rgb(196, 192, 192);
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.navBarBlock>div>div>p {
+    margin-right: 10px;
+    height: 27px;
+    width: 27px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: rgb(165, 164, 164) 1px solid;
+    cursor: pointer;
+}
+
+.selection {
+    position: relative;
+        cursor: pointer;
+}
+
+.correct {
+    position: absolute;
+    font-size: 28px;
+    color: #fff;
+    display: inline-block;
+    top: 0.5px;
+}
+
+.cross {
+    position: absolute;
+    top: 27px;
+    right: 55px;
+    font-size: 25px;
+    color: grey;
+}
