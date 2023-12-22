@@ -1,4 +1,13 @@
-import {createRoot} from "react-dom/client";
-import App from "./App";
-import Css from "./App.css"
-createRoot(document.getElementById('root')).render(<App />)
+import { createRoot } from "react-dom/client";
+
+import Counter from "./redux/Counter";
+import { Provider } from "react-redux";
+
+import store from './redux/store';
+
+
+createRoot(document.getElementById("root")).render(
+  <Provider store={store}>
+    <Counter />
+  </Provider>
+);
