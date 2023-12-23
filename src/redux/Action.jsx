@@ -3,6 +3,7 @@ export let Increment = () => {
     type: "Increment",
   };
 };
+
 export let Decrement = () => {
   return {
     type: "Decrement",

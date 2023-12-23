@@ -1,5 +1,5 @@
 let initialState = 0;
-let counterReducer = (state = initialState, action) => {
+let counterReducer = (state = 0, action) => {
   switch (action.type) {
     case "Increment":
       return state + 1;
@@ -11,7 +11,7 @@ let counterReducer = (state = initialState, action) => {
       return (state = 0);
 
     default:
-     return state;
+      return state;
   }
 };
 export default counterReducer;
